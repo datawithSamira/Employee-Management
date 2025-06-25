@@ -1,21 +1,71 @@
-# Employee-Management
-In this project, I have worked with employee management data, including Employee ID, Full Name, Department, Designation, Hire Date, and Annual Salary. 
-The tasks I completed are as follows:
-1.	Determined the average annual salary across all departments as well as for specific departments, and identified the departments with the highest and lowest average salaries.
-2.	Identified the top 5 employees with the highest salary values.
-3.	Created a dynamic chart to display the salary distribution by designation for each department.
-To identify the top 5 employees by salary, I used a pivot table with the employees’ Full Names placed in the row area and their Annual Salaries in the values area. This allowed me to easily sort and extract the highest salary earners.
-To show the salary distribution by designation for each department, I used a pivot table and created a stacked column chart. I also added slicers to enable dynamic filtering by department and designation.
-Finally, the last sheet in this file displays my search box, which I created using the FILTER function to allow dynamic searching based on specified criteria.
-n the last sheet, I implemented a search box using the FILTER function. The formula:
-php
-CopyEdit
-=FILTER(
-  A2:F41,
-  (ISNUMBER(SEARCH(J5,B2:B41))) +
-  (ISNUMBER(SEARCH(J5,C2:C41))) +
-  (ISNUMBER(SEARCH(J5,D2:D41))) > 0,
-  "No match found"
-)
-allows dynamic filtering of rows where the value entered in the search box (cell J5) is found in either the Full Name (column B), Department (column C), or Designation (column D). If no match is found, it returns "No match found".
+**Employee Management Project**
 
+In this project, I worked with **employee management data**, including:
+
+- **Employee ID**
+- **Full Name**
+- **Department**
+- **Designation**
+- **Hire Date**
+- **Annual Salary**
+
+**Project Objectives**
+
+Analyze employee salary data across departments  
+Identify top earners  
+Create dynamic, interactive reports for salary distribution  
+Enable flexible search and filtering of employee records
+
+**Tasks Completed**
+
+- **Average Salary Analysis**
+  - Calculated the average annual salary across all departments
+  - Determined average salaries for each specific department
+  - Identified departments with the **highest** and **lowest** average salaries
+- **Top Earners**
+  - Identified the **top 5 employees** with the highest salary
+  - Used a pivot table with:
+    - _Full Name_ in the row area
+    - _Annual Salary_ in the values area
+  - Sorted the pivot table to easily extract the top salary earners
+- **Salary Distribution Visualization**
+  - Created a pivot table showing salary distribution by **designation** for each department
+  - Built a **stacked column chart** for visualization
+  - Added **slicers** for dynamic filtering by department and designation
+- **Dynamic Search Box**
+  - Implemented a **search feature** using the FILTER function:
+
+excel
+
+CopyEdit
+
+\=FILTER(
+
+A2:F41,
+
+(ISNUMBER(SEARCH(J5, B2:B41)))
+
+\+ (ISNUMBER(SEARCH(J5, C2:C41)))
+
+\+ (ISNUMBER(SEARCH(J5, D2:D41))) > 0,
+
+"No match found"
+
+)
+
+- - This allows dynamic filtering of rows where the search term (entered in J5) matches the **Full Name**, **Department**, or **Designation**
+    - Displays "No match found" if no match is detected
+
+**Tools Used**
+
+- Excel / Google Sheets
+- Pivot Tables & Pivot Charts
+- Slicers
+- FILTER, SEARCH, ISNUMBER functions
+
+**Features**
+
+- Interactive salary distribution chart
+- Search box for flexible data lookup
+- Quick identification of top earners
+- Department-level salary insights
