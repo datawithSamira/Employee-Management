@@ -69,3 +69,14 @@ A2:F41,
 - Search box for flexible data lookup
 - Quick identification of top earners
 - Department-level salary insights
+- 
+##  Author
+
+** [Samira]**  
+[https://www.linkedin.com/in/samira-j-a60b8b1a0/] 
+
+---
+
+## License
+
+This project is for educational/demo purposes and is provided under the MIT License.
